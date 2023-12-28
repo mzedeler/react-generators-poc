@@ -3,10 +3,13 @@ import { useState, useEffect } from 'react'
 export const gen = genComponent => props => {
   const [elements, setElements] = useState()
 
-  useEffect(() => async () => {
-    for await (const elements of genComponent(props)) {
-      setElements(elements)
+  useEffect(() => {
+    const worker = async () => {
+      for await (const elements of genComponent(props)) {
+        setElements(elements)
+      }
     }
+    worker()
   }, [setElements, props])
   console.log(elements)
   return elements
