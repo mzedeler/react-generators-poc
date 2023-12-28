@@ -11,6 +11,7 @@ export const gen = genComponent => props => {
     }
     worker()
   }, [setElements, props])
-  console.log(elements)
+
+  console.log('render')
   return elements
 }

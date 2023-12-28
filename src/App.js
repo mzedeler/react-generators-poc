@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { GeneratorComponent } from './GeneratorComponent';
-import { GeneratorInput } from './GeneratorInput';
+import { GeneratorInput2 } from './GeneratorInput2';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <GeneratorComponent />
         <br />
-        <GeneratorInput />
+        <GeneratorInput2 />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
