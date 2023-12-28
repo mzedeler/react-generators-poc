@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import { GeneratorComponent } from './GeneratorComponent';
+import { GeneratorInput } from './GeneratorInput';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <GeneratorComponent />
+        <br />
+        <GeneratorInput />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
